@@ -1,3 +1,7 @@
+hl.on("hyprland.start", function ()
+    hl.exec_cmd("swaybg -i ~/.config/hypr/config/wallpaper.png -m fill")
+end)
+
 hl.config({
     general = {
         gaps_in  = 5,

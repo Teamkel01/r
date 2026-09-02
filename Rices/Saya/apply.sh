@@ -15,8 +15,9 @@ cp -r "$DIR/kitty/"* "$HOME/.config/kitty/"
 cp -r "$DIR/waybar/"* "$HOME/.config/waybar/"
 
 # Restart
+hyprctl reload
 pkill waybar
 waybar &
 
 pkill swaybg
-swaybg -i "$DIR/hypr/config/colors/wallpaper.png" -m fill &
+swaybg -i "$DIR/hypr/config/wallpaper.png" -m fill &
