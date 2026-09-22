@@ -16,6 +16,9 @@ ln -sfn "$DIR/kitty/" "$HOME/.config/"
 # Waybar
 ln -sfn "$DIR/waybar/" "$HOME/.config/"
 
+# Fastfetch
+ln -sfn "$DIR/fastfetch/" "$HOME/.config/"
+
 # Restart
 hyprctl reload
 pkill waybar
