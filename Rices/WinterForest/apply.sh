@@ -14,7 +14,8 @@ ln -sfn "$DIR/hypr/wallpaper.png" "$DIR/../_Global/hypr/config/"
 ln -sfn "$DIR/kitty/" "$HOME/.config/"
 
 # Waybar
-ln -sfn "$DIR/waybar/" "$HOME/.config/"
+ln -sfn "$DIR/../_Global/waybar/" "$HOME/.config/"
+ln -sfn "$DIR/waybar/colors.css" "$DIR/../_Global/waybar/"
 
 # Fastfetch
 ln -sfn "$DIR/fastfetch/" "$HOME/.config/"
@@ -22,6 +23,6 @@ ln -sfn "$DIR/fastfetch/" "$HOME/.config/"
 # Restart
 hyprctl reload
 pkill waybar
-waybar &
+setsid waybar &
 
 awww img "$DIR/hypr/wallpaper.png" --transition-type grow --transition-duration 2 --transition-fps 240
